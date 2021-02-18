@@ -1,0 +1,26 @@
+{
+  "name": "projectworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "verbose": true
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Esra Caglar",
+  "license": "ISC",
+  "dependencies": {
+    "@codeceptjs/configure": "^0.6.2",
+    "@wdio/selenium-standalone-service": "^7.0.2",
+    "codeceptjs": "^3.0.5",
+    "webdriverio": "^7.0.2"
+  },
+  "devDependencies": {
+    "frisby": "^2.0.5",
+    "jes": "^0.6.1",
+    "jest": "^26.6.3"
+  }
+}
