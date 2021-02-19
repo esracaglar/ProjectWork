@@ -22,7 +22,7 @@ Open command prompt:
                  - ``` java -jar selenium-server-standalone-3.141.59.jar -role hub ``` 
 
 Open new command prompt:    				 
-             **B.** Register node with hub server    
+             **B.** Register node with hub server<br>    
                  - ```java -Dwebdriver.chrome.driver="...\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register/```          
              **C.** Register the node including the path for the executable as shown below.(drivers exist in project)    
                  - ```java  -Dwebdriver.chrome.driver=..\…\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=3```   
