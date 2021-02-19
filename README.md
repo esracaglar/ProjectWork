@@ -9,7 +9,7 @@
 4. Install git
 
 You can use environmentSetup.bat for quick environment setup:
-- Double click on environmentSetup.bat 
+- Open command prompt as Administrator run environmentSetup.bat
 - Environment inludes:
     1. Chocolatey and NodeJS
     2. CodeceptJS, Webdriverio and Selenium-standalone
