@@ -1,3 +1,11 @@
+***You can use "environmentSetup.bat for" quick environment setup:***
+- Open command prompt as Administrator run environmentSetup.bat
+- Environment inludes:
+    1. Chocolatey and NodeJS
+    2. CodeceptJS, Webdriverio and Selenium-standalone
+    3. Frisby.js and JEST
+    4. Browsers: Chrome, Opera, Internet Explorer, Mozilla Firefox
+
 ### Project1 
 ---
 ***Pre-requisites & Getting Started***
@@ -48,10 +56,3 @@ If you don't have Jest installed in your project yet, install it
 To run specific test: ```npm test api_spec.js```
 
 ----
-***You can use "environmentSetup.bat for" quick environment setup:***
-- Open command prompt as Administrator run environmentSetup.bat
-- Environment inludes:
-    1. Chocolatey and NodeJS
-    2. CodeceptJS, Webdriverio and Selenium-standalone
-    3. Frisby.js and JEST
-    4. Browsers: Chrome, Opera, Internet Explorer, Mozilla Firefox
