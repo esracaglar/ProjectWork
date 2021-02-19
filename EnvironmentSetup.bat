@@ -1,13 +1,13 @@
 @echo off
 title Test environment setup!
-:Ask
+:Ask1
 set /P INPUT=Would you like to install Chocolatey and NodeJS? (Y/N): %=%
 
 If /I "%INPUT%"=="Y" goto yes 
-If /I "%INPUT%"=="N" goto no
+If /I "%INPUT%"=="N" goto Ask2
 
 echo Incorrect input. Please type Y or N.
-goto Ask
+goto Ask1
 
 
 :yes
@@ -16,15 +16,15 @@ cmd/c @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile 
 
 choco install nodejs
 
-
+:Ask2
 set /P INPUT=Would you like to install CodeceptJS, Webdriverio and Selenium-standalone ? (Y/N): %=%
 
 
 If /I "%INPUT%"=="Y" goto yes 
-If /I "%INPUT%"=="N" goto no
+If /I "%INPUT%"=="N" goto Ask3
 
 echo Incorrect input. Please type Y or N.
-goto Ask
+goto Ask2
 
 :yes
 call npm install -g codeceptjs
@@ -32,26 +32,15 @@ call npm install -g webdriverio
 call npm install -g selenium-standalone 
 call selenium-standalone install
 
-set /P INPUT=Would you like to install jdk8 ? (Y/N): %=%
-
-
-If /I "%INPUT%"=="Y" goto yes 
-If /I "%INPUT%"=="N" goto no
-
-echo Incorrect input. Please type Y or N.
-goto Ask
-
-:yes
-choco install jdk8
-
+:Ask3
 set /P INPUT=Would you like to install and upgrade browsers Chrome, Opera, Internet Explorer, Mozilla Firefox ? (Y/N): %=%
 
 
 If /I "%INPUT%"=="Y" goto yes 
-If /I "%INPUT%"=="N" goto no
+If /I "%INPUT%"=="N" goto Ask4
 
 echo Incorrect input. Please type Y or N.
-goto Ask
+goto Ask3
 
 :yes
 
@@ -60,6 +49,30 @@ choco upgrade opera
 choco upgrade ie11
 choco upgrade firefox
 choco list --localonly
+
+:Ask4
+set /P INPUT=Would you like to install Frisby.js? (Y/N): %=%
+
+If /I "%INPUT%"=="Y" goto yes 
+If /I "%INPUT%"=="N" goto Ask5
+
+echo Incorrect input. Please type Y or N.
+goto Ask4
+
+:yes
+call npm install --save frisby@2.0.5
+
+:Ask5
+set /P INPUT=Would you like to install JEST? (Y/N): %=%
+
+If /I "%INPUT%"=="Y" goto yes 
+If /I "%INPUT%"=="N" goto no
+
+echo Incorrect input. Please type Y or N.
+goto Ask5
+
+:yes
+call npm install --save-dev jest
 
 goto cont
 :no
