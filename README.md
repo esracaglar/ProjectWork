@@ -19,20 +19,20 @@ You can use environmentSetup.bat for quick environment setup:
 5. Clone the Project on VS
 6. Prepare Selenium Grid - Setup
 
-Open command prompt:
-             1. Make local system as HUB server: 
-                 1. ``` java -jar selenium-server-standalone-3.141.59.jar -role hub     ```
-Open new command prompt screen:				 
-             2. Register node with hub server
-                 1. ```java -Dwebdriver.chrome.driver="...\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register/```        
-             3. Register the node including the path for the executable as shown below.(drivers exist in project)
-                 1. ```java  -Dwebdriver.chrome.driver=..\…\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=3``` 
-             4. You can access the selenium-grid console using: http://localhost:4444/grid/console     
-             5. You can run your tests
+Open command prompt:  
+             1. Make local system as HUB server:    
+                 -  ``` java -jar selenium-server-standalone-3.141.59.jar -role hub     ```  
+Open new command prompt screen:      				 
+             2. Register node with hub server  
+                 - ```java -Dwebdriver.chrome.driver="...\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register/```          
+             3. Register the node including the path for the executable as shown below.(drivers exist in project)  
+                 - ```java  -Dwebdriver.chrome.driver=..\…\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=3```   
+             4. You can access the selenium-grid console using: http://localhost:4444/grid/console           
+             5. You can run your tests      
 
-7. Open the Project on VS 
-     1. Open Terminal
-        1. Execute tests:
+7. Open the Project on VS     
+     1. Open Terminal    
+        1. Execute tests:  
              1. To run all test : ``` npx codeceptjs run  ```
              2. To run specific test: ``` npx codeceptjs run .\tests\detailSearchPage_test.js     ```
              3. To run all suites for all browsers: ``` npx codeceptjs run-multiple --all  ```
