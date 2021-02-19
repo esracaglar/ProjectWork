@@ -1,5 +1,4 @@
 ### Project1 
-{: .alert .alert-success}
 ---
 ***Pre-requisites & Getting Started***
 
@@ -31,7 +30,6 @@ Open new command prompt:
 ----
 
 ### Project2 
-{: .alert .alert-success}
 ---
 ###Pre-requisites & Getting Started###
 
@@ -50,7 +48,6 @@ To run specific test: ```npm test api_spec.js```
 
 ----
 ***You can use "environmentSetup.bat for" quick environment setup:***
-{: .gitlab-purple}
 - Open command prompt as Administrator run environmentSetup.bat
 - Environment inludes:
     1. Chocolatey and NodeJS
