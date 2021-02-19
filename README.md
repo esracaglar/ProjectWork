@@ -2,31 +2,31 @@
 ---
 ***Pre-requisites & Getting Started***
 
-**1**. Install NodeJS & Visiual Studio Code
-**2**. Initiate NodeJS Project
-**3**. npm install codeceptjs with WDIO
-**4**. Install git
-**5**. Clone the Project on VS
-**6**. Prepare Selenium Grid - Setup  
+**1.** Install NodeJS & Visiual Studio Code
+**2.** Initiate NodeJS Project
+**3.** npm install codeceptjs with WDIO
+**4.** Install git
+**5.** Clone the Project on VS
+**6.** Prepare Selenium Grid - Setup  
 
 Open command prompt:  
-             **A**. Make local system as HUB server:     
+             **A.** Make local system as HUB server:     
                  - ``` java -jar selenium-server-standalone-3.141.59.jar -role hub ``` 
-                    
-Open new command prompt:    				 
-             **B**. Register node with hub server    
-                 - ```java -Dwebdriver.chrome.driver="...\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register/```          
-             **C**. Register the node including the path for the executable as shown below.(drivers exist in project)    
-                 - ```java  -Dwebdriver.chrome.driver=..\…\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=3```   
-             **D**. You can access the selenium-grid console using: http://localhost:4444/grid/console       
-             **E**. You can run your tests  
 
-**7**. Open the Project on VS     
-     **1**. Open Terminal    
-        **1**. Execute tests:    
-             **1**. To run all test : ``` npx codeceptjs run  ```    
-             **2**. To run specific test: ``` npx codeceptjs run .\tests\detailSearchPage_test.js     ```    
-             **3**. To run all suites for all browsers: ``` npx codeceptjs run-multiple --all  ```    
+Open new command prompt:    				 
+             **B.** Register node with hub server    
+                 - ```java -Dwebdriver.chrome.driver="...\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register/```          
+             **C.** Register the node including the path for the executable as shown below.(drivers exist in project)    
+                 - ```java  -Dwebdriver.chrome.driver=..\…\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=3```   
+             **D.** You can access the selenium-grid console using: http://localhost:4444/grid/console       
+             **E.** You can run your tests  
+
+**7.** Open the Project on VS     
+     **1.** Open Terminal    
+        **1.** Execute tests:    
+             **1.** To run all test : ``` npx codeceptjs run  ```    
+             **2.** To run specific test: ``` npx codeceptjs run .\tests\detailSearchPage_test.js     ```    
+             **3.** To run all suites for all browsers: ``` npx codeceptjs run-multiple --all  ```    
 
 ----
 
