@@ -44,7 +44,7 @@ Open new command prompt:<br>
 
 To get started with Frisby.js, add it to your project as a dev dependency:  
 
-```npm install frisby --save-dev```  
+```npm install --save frisby@2.0.5```  
 
 Install Jest  
 If you don't have Jest installed in your project yet, install it  
