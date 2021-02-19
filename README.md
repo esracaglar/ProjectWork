@@ -22,8 +22,8 @@ Open new command prompt:
              **E.** You can run your tests  
 
 **7.** Open the Project on VS     
-     **1.** Open Terminal    
-        **1.** Execute tests:    
+     - Open Terminal    
+        - Execute tests:    
              **1.** To run all test : ``` npx codeceptjs run  ```    
              **2.** To run specific test: ``` npx codeceptjs run .\tests\detailSearchPage_test.js     ```    
              **3.** To run all suites for all browsers: ``` npx codeceptjs run-multiple --all  ```    
